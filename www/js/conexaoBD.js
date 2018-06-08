@@ -134,75 +134,34 @@ function addItemListaBD(usuario) {
 	});
 }
 
-$(#enviarAlimento).click(function (e) { 
-		var alimento = $('#alimento').val();
-		var marca = $('#marca').val();
-		var tamPorcao = $('#tamPorcao').val();
-		var numPorcoes = $('#numPorcoes').val();
-		var calorias = $('#calorias').val();
-		var carbo = $('#carbo').val();
-		var prot = $('#prot').val();
-		var gordTot = $('#gordTot').val();
-		var gordSat = $('#gordSat').val();
-		var gordPoli = $('#gordPoli').val();
-		var monoinsat = $('#monoinsat').val();
-		var gordTrans = $('#gordTrans').val();
-		var colest = $('#colest').val();
-		var sodio = $('#sodio').val();
-		var potassio = $('#potassio').val();
-		var fibras = $('#fibras').val();
-		var acucar = $('#acucar').val();
-		var vitA = $('#vitA').val();
-		var vitC = $('#vitC').val();
-		var calcio = $('#calcio').val();
-		var ferro = $('#ferro').val();
-		
-		if (alimento.trim() == '') {
-			alert("Preencha o campo alimento");
-		}else if(tamPorcao.trim() == ''){
-			alert("Preencha o campo tamanho porção");
-		}else if(numPorcoes.trim() == ''){
-			alert("Preencha o campo número de porções");
-		}else if(calorias.trim() == ''){
-			alert("Preencha o campo calorias");
-		}else if(marca.trim() == ''){
-			marca = "Sem marca";
-		}else if(carbo.trim() == ''){
-			carbo = 0;
-		}else if(prot.trim() == ''){
-			prot = 0;
-		}else if(gordTot.trim() == ''){
-			gordTot = 0;
-		}else if(gordSat.trim() == ''){
-			gordSat = 0;
-		}else if(gordPoli.trim() == ''){
-			gordPoli = 0;
-		}else if(monoinsat.trim() == ''){
-			monoinsat = 0;
-		}else if(gordTrans.trim() == ''){
-			gordTrans = 0;
-		}else if(colest.trim() == ''){
-			colest = 0;
-		}else if(sodio.trim() == ''){
-			sodio = 0;
-		}else if(potassio.trim() == ''){
-			potassio = 0;
-		}else if(fibras.trim() == ''){
-			fibras = 0;
-		}else if(acucar.trim() == ''){
-			acucar = 0;
-		}else if(vitA.trim() == ''){
-			vitA = 0;
-		}else if(vitC.trim() == ''){
-			vitC = 0;
-		}else if(calcio.trim() == ''){
-			calcio = 0;
-		}else if(ferro.trim() == ''){
-			ferro = 0;
-		}else{
-			alimentos = {id: 0, alimento: alimento, marca: marca, tamPorcao: tamPorcao, numPorcoes: numPorcoes, calorias: calorias, carbo: carbo, prot: prot, gordTot: gordTot, gordSat: gordSat, gordPoli: gordPoli, monoinsat: monoinsat, gordTrans: gordTrans, colest: colest, sodio: sodio, potassio: potassio, fibras: fibras, acucar: acucar, vitA: vitA, vitC: vitC, calcio: calcio, ferro: ferro};
-			addAlimentoBD(alimentos);
-		}	
+$('#enviarAlimento').click(function (e) {
+
+		alimentos = { 
+			id: 0,
+			alimento:	$('#alimento').val(),
+			marca:		$('#marca').val(),
+			tamPorcao:  $('#tamPorcao').val(),
+			numPorcoes: $('#numPorcoes').val(),
+			calorias: 	$('#calorias').val(),
+			carbo: 		$('#carbo').val(),
+			prot: 		$('#prot').val(),
+			gordTot: 	$('#gordTot').val(),
+			gordSat: 	$('#gordSat').val(),
+			gordPoli: 	$('#gordPoli').val(),
+			monoinsat: 	$('#monoinsat').val(),
+			gordTrans: 	$('#gordTrans').val(),
+			colest: 	$('#colest').val(),
+			sodio: 		$('#sodio').val(),
+			potassio: 	$('#potassio').val(),
+			fibras: 	$('#fibras').val(),
+			acucar: 	$('#acucar').val(),
+			vitA: 		$('#vitA').val(),
+			vitC: 		$('#vitC').val(),
+			calcio: 	$('#calcio').val(),
+			ferro: 		$('#ferro').val()
+		};
+
+		addAlimentoBD(alimentos);
 });
 
 function addAlimentoBD(alimentos) {
@@ -214,22 +173,23 @@ function addAlimentoBD(alimentos) {
 				window.location.href = 'painelControle.html';
 		});
 	});
-}		
+}
 
-/*function addItemTela() {
+function addItemTela() {
 	bd.transaction(function(tx) {
 		tx.executeSql('SELECT * FROM TB_ALIMENTOS', [], function (tx, results2) { 
 			var n = results2.rows.length;
-			for(var i=0; i<n; i++){
+
+			for(var i = 0;i < n;i++) {
 				var listaAlimentos = results2.rows.item(i);
 				var clone = $('#item-lista li#listaAlimento').clone().appendTo('#item-lista ul').show();
 				clone.find('#tipoAlimento').text(listaAlimentos.alimento);
 				clone.find('#qtdAlimento').text(listaAlimentos.tamPorcao + 'porção');
 				clone.find('#caloriasAlimento').text(listaAlimentos.calorias + 'calorias');
 			}
-		);
+		});
 	});
-}*/
+}
 
 /*var testeLeitura = function(){
 	alert("entrou");
@@ -251,7 +211,6 @@ function addAlimentoBD(alimentos) {
 }*/
 
 
-
 /*function limparCampos() {
 	$('#nome').val('').focus();
 	$('#senha').val('');
@@ -260,4 +219,5 @@ function addAlimentoBD(alimentos) {
 	$('#altura').val('');
 	$('#pesoAtual').val('');
 	$('#pesoDesejado').val('');
+	$('form input')
 }*/
