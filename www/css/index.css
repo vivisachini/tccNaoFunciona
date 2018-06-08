@@ -1,0 +1,130 @@
+*{
+	margin:0;
+	font-family: 'Roboto', sans-serif;
+}
+#telaInicio{
+	background:url("../img/fundoPrincipal.jpg");
+	background-size:cover;
+}
+#telaLogin{
+	background:url("../img/fundoLogin.jpg");
+	background-size:cover;
+}
+.logoApp{
+	font-size: 65px;
+	color: #F0F0F0;
+	font-family: 'Roboto', sans-serif;
+	padding-top: 40%;
+	text-align:center;
+}
+.page{
+	position:absolute;
+	width:100%;
+	height:100%;
+	overflow: auto;
+}
+.btnindex{
+	position:fixed;
+	width:100%;
+	padding: 25px 0px;
+	text-align:center;
+	background: #487eb0;
+	color: #f0f0f0;
+	bottom: 0;
+	border: 0;
+	text-transform:uppercase;
+}
+.btnfooter{
+	position:fixed;
+	height: 70px;
+	width: 70px;
+	left:40%;
+	bottom: 0;
+	border: 0;
+	margin-bottom:5px;
+}
+.css-toolbar{
+	height: 60px;
+}
+.toolbar-centralizar{
+	padding:10px 10px;
+	font-size:20px;
+	font-family: 'Nunito', sans-serif;
+}
+.css-header{
+	font-weight: bold;
+	font-size: 20px;
+	padding-top: 15px;
+	color: #0a3d62;
+}
+.css-material{
+	padding-left: 30px;
+}
+.adcAlimento{
+	color:#fa8231;
+	text-decoration:none;
+}
+.textoAdc{
+	width:100%;
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
+	color: #182C61;
+}
+.btnfooter2{
+	position:fixed;
+	width:100%;
+	padding: 20px 0px;
+	text-align:center;
+	background: #192a56;
+	color: #f0f0f0;
+	bottom: 0;
+	border: 0;
+	text-transform:uppercase;
+	font-size: 20px;
+}
+a href{
+	text-decoration:none; 
+}
+.painel-login{
+	width: 90%;
+	background: #63cdda;
+	margin: auto;
+	padding: 15px 5%;
+	border-radius: 5px;
+}
+.form-login{
+	width: 80%;
+	margin-bottom: 10px;
+	padding: 10px 5%;
+	border: 1px solid #bbb;
+	border-radius: 2px;
+}
+.login-header{
+	text-align:center;
+	margin-bottom:5px;
+}
+.btn{
+	width:auto;
+	padding: 10px 25px;
+	border:0;
+	border-radius:2px;
+	text-transform:uppercase;
+}
+.btn-primary{
+	background: #0c2461;
+	color: white;
+}
+.btn-success{
+	background:#e58e26;
+	color: white;
+}
+.toolbar-letra{
+	color: #ffffff;
+}
+#campoPesquisa{
+	width: 95%; 
+	margin-top: 60px;
+	margin-left: 2.5%;
+	margin-bottom: 3%;
+}

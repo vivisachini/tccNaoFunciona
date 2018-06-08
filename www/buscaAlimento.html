@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<link rel="stylesheet" type="text/css" href="onsenui/css/onsenui.css">
+		<link rel="stylesheet" type="text/css" href="onsenui/css/onsen-css-components.min.css">
+		<title>Buscar Alimento</title>
+	</head>
+	<body class="page">
+		<div class="toolbar css-toolbar" style="background-color: #ff7f50; border-bottom: 3px solid #596275; position: fixed;">
+			<div class="toolbar__left toolbar-centralizar" >
+				<span class="toolbar-button"><a href="painelControle.html"><img class="imgBack" src="img/back.png" style="padding-top:10px;"></a></span>
+			</div>
+
+			<div class="toolbar__center toolbar-centralizar" style="color:white;">Nutrição & Ajuda</div>
+
+			<div class="toolbar__right toolbar-centralizar">
+				<span class="toolbar-button"><img src="img/novo.png" style="padding-top:10px;"></span>
+			</div>
+		</div>
+		
+		<input type="search" value="" placeholder="Search" class="search-input" id="campoPesquisa">		
+		
+		<div id="item-lista">
+			<ul class="list list--inset">
+			  <li style="display:none" class="list-item list--inset__item list-item--chevron list-item--tappable" id="listaAlimento">
+				<div class="list-item__center">
+					<div class="list-item__title" id="tipoAlimento">Banana</div>
+					<div class="list-item__subtitle" id="qtdAlimento" >1 porção</div>
+				</div>
+				<div class="list-item__right">
+					<div class="list-item__label" style="margin-right: 20px;" id="caloriasAlimento">98 calorias</div>
+				</div>
+			  </li>
+			</ul>
+		</div>
+		
+		<script type="text/javascript" src="cordova.js"></script>
+		<script type="text/javascript" src="onsenui/js/onsenui.min.js"></script>
+		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="js/conexaoBD.js"></script>
+	</body>
+</html>

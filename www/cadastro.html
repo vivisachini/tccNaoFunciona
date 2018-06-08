@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="UTF-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<link rel="stylesheet" type="text/css" href="onsenui/css/onsenui.css">
+		<link rel="stylesheet" type="text/css" href="onsenui/css/onsen-css-components.min.css">
+        <title>Cadastro</title>
+    </head>
+    <body class="page">
+		<div class="toolbar css-toolbar" style="background-color: #ff7f50; border-bottom: 3px solid #596275; position: fixed;">
+			<div class="toolbar__left toolbar-centralizar" >
+				<span class="toolbar-button"><a href="login.html"><img class="imgBack" src="img/back.png" style="padding-top:10px;"></a></span>
+			</div>
+
+			<div class="toolbar__center toolbar-centralizar" style="color:white;">Nutrição & Ajuda</div>
+
+			<div class="toolbar__right toolbar-centralizar">
+				<span class="toolbar-button" onclick='criarNovoUsuario()' ><a href="#"><img src="img/checked-user.png" style="padding-top:10px;"></a></span>
+			</div>
+		</div>
+				
+			<ul class="list">
+				<li class="list-item">
+					<div class="list-item__center css-header" style="padding-top:60px;">Nome: </div>
+				</li>		
+				<span>
+					<div><input class="text-input text-input--material textoAdc" placeholder="ex: Maria da Silva" type="text" id="nome" style="padding: 10px 10px; width:100%" required></div>
+				</span>
+				<li class="list-item">
+					<div class="list-item__center css-header">Senha: </div>
+				</li>
+				<span>
+					<div><input class="text-input text-input--material textoAdc" placeholder="ex: Maria123" type="password" id="senha" style="padding: 10px 10px; width:100%" required></div>
+				</span>
+				<li class="list-item">
+					<div class="list-item__center css-header">E-mail: </div>
+				</li>
+				<span>
+					<div><input class="text-input text-input--material textoAdc" placeholder="ex: maria@teste.com" type="text"  id="email" style="padding: 10px 10px; width:100%" required></div>
+				</span>
+				<li class="list-item">
+					<div class="list-item__center css-header">Data Nascimento: </div>
+				</li>
+				<span>
+					<div><input class="text-input text-input--material textoAdc" placeholder="ex: 01/01/2001" type="text" id="dataNasc" style="padding: 10px 10px; width:100%" required></div>
+				</span>
+				<li class="list-item">
+					<div class="list-item__center css-header">Altura: </div>
+				</li>
+				<span>
+					<div><input class="text-input text-input--material textoAdc" placeholder="ex: 160cm" type="text" id="altura" style="padding: 10px 10px; width:100%" required></div>
+				</span>
+				<li class="list-item">
+					<div class="list-item__center css-header">Peso Atual: </div>
+				</li>
+				<span>
+					<div><input class="text-input text-input--material textoAdc" placeholder="ex: 70kg" type="text" id="pesoAtual" style="padding: 10px 10px; width:100%" required></div>
+				</span>
+				<li class="list-item">
+					<div class="list-item__center css-header">Peso Desejado: </div>
+				</li>
+				<span>
+					<div><input class="text-input text-input--material textoAdc" placeholder="ex: 60kg" type="text" id="pesoDesejado" style="padding: 10px 10px; width:100%" required></div>
+				</span>
+			</ul>
+			<!--<a href="#" style="text-decoration:none;"><button class="button--large--cta" style="width: 95%; margin: 0 auto; margin-top:10px;" onclick='criarNovoUsuario()'>Cadastrar</button></a> -->
+		<!--<button onclick="testeLeitura()">Read</button>-->
+	
+		<script type="text/javascript" src="cordova.js"></script>
+		<script type="text/javascript" src="onsenui/js/onsenui.min.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="js/conexaoBD.js"></script>
+	</body>
+</html>
